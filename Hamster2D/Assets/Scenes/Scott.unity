@@ -462,6 +462,100 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4684128942265276559, guid: 26924ab3b503c614fb090529ad71283a, type: 3}
   m_PrefabInstance: {fileID: 222292121}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1807745003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4684128943454154863, guid: 26924ab3b503c614fb090529ad71283a, type: 3}
+  m_PrefabInstance: {fileID: 4684128943860190276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1807745004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807745003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 302a4c7b5bac1b3448bb1c2c3bad7d56, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1807745005}
+        m_TargetAssemblyTypeName: PLayer2Move, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d37daa4c-184e-481d-a40d-52df7ae9f0b2
+    m_ActionName: Movement/Movement[/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1807745005}
+        m_TargetAssemblyTypeName: PLayer2Move, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c9eee579-19b2-4c90-863c-ba967a2459dd
+    m_ActionName: Movement/Jump[/Keyboard/space]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Movement
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &1807745005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807745003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7e9e13ca97c1c44a70ad566ea8eb00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1807745007}
+  groundCheck: {fileID: 1860192383}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!50 &1807745007 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 4684128943454154857, guid: 26924ab3b503c614fb090529ad71283a, type: 3}
+  m_PrefabInstance: {fileID: 4684128943860190276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1860192383 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4684128942265276559, guid: 26924ab3b503c614fb090529ad71283a, type: 3}
+  m_PrefabInstance: {fileID: 4684128943860190276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4684128943860190276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -469,6 +563,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4684128943454154856, guid: 26924ab3b503c614fb090529ad71283a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4684128943454154863, guid: 26924ab3b503c614fb090529ad71283a, type: 3}
       propertyPath: m_Name
       value: Player
